@@ -6,18 +6,18 @@ class Unicorn
   def initialize(name)
     @name = name
     @color = "silver"
-    @lang = "~*~ ~*~"
+    @speak = "~*~ ~*~"
 
   end
-  def say(speak)
-    @lang= speak
-  end
+      def say(new_speak)
+        @speak = "~*~" + new_speak + "~*~"
+      end
 end
 magic1 = Unicorn.new("Rainbow")
 p magic1
 
-# magic1.say("I love you")
-# p magic1
+magic1.say("I love you")
+p magic1
 
 
 
