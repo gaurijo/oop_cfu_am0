@@ -20,7 +20,6 @@ magic1.say("I love you")
 p magic1
 
 
-
 #  Write a class called Vampire
 #  it should have a dynamic name attribute
 #  it should have a pet attribute, that is a bat, by default BUT it could be dynamic if info is passed in initially
