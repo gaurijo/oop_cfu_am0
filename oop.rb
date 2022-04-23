@@ -74,3 +74,24 @@ p friend1
 #  it should have an is_adult attribute (boolean) that is false by default. once a Hobbit is 33, it should be an adult
 #  it should have an is_old attribute that defaults to false. once a Hobbit is 101, it is old.
 #  it should have a has_ring attribute. If the Hobbit's name is "Frodo", true, if not, false.
+
+class Hobbit
+  def initialize(name, disposition)
+    @name = name
+    @disposition = disposition
+    @age = 0
+    @is_adult = false
+    @is_old = false
+  end
+  def celebrate_birthday(age, name)
+    @age = age + 1
+    @is_adult = true if age >= 33
+    @is_old = true if age >= 101
+    @has_ring = true if name == "Frodo"
+  end
+end
+elf1 = Hobbit.new("Frodo", "king")
+
+elf1.celebrate_birthday(101, "Frodo")
+
+p elf1
