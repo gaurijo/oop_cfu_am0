@@ -25,6 +25,23 @@ p magic1
 #  it should have a pet attribute, that is a bat, by default BUT it could be dynamic if info is passed in initially
 #  it should have a thirsty attribute, that is true by default
 #  it should have a drink method. When called, the thirsty attribute changes to false
+class Vampire
+  def initialize(name, pet)
+    @name = name
+    @pet = "cat"
+    @thirsty = true
+  end
+  def drink()
+    @thirsty = false
+
+  end
+end
+blood1 = Vampire.new("Dracula", @pet)
+
+
+blood1.drink
+
+p blood1
 
 
 #  Write a Dragon class
